@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #222;
+}
+
+
+/* BUTTON */
+
+button {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+
+/* INPUTS */
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    background: white;
+}
+
+
+/* LOGIN */
+
+.login-page {
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #e8eef7;
+}
+
+
+.login-box {
+    background: white;
+
+    width: 360px;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+.login-box h1 {
+    text-align: center;
+
+    color: #2563eb;
+
+    margin-bottom: 8px;
+}
+
+
+.login-box p {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+
+.login-box input,
+.login-box select {
+    margin-bottom: 15px;
+}
+
+
+.login-box button {
+    width: 100%;
+}
+
+
+/* HEADER */
+
+header {
+    background: #2563eb;
+
+    color: white;
+
+    padding: 16px 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.logout-btn {
+    background: white;
+
+    color: #2563eb;
+}
+
+
+.logout-btn:hover {
+    background: #f1f5f9;
+}
+
+
+/* APPLICATION */
+
+.app {
+    display: none;
+}
+
+
+/* CONTAINER */
+
+.container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 25px;
+}
+
+
+/* SECTION */
+
+.section {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+
+.section h2 {
+    margin-bottom: 15px;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin: 20px 0;
+}
+
+
+.card {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+
+.card h3 {
+    color: #555;
+
+    margin-bottom: 10px;
+}
+
+
+.percent {
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #2563eb;
+}
+
+
+/* FORMS */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+/* TABLE */
+
+.table-box {
+    overflow-x: auto;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 650px;
+}
+
+
+th,
+td {
+    padding: 12px;
+
+    border-bottom: 1px solid #ddd;
+
+    text-align: left;
+}
+
+
+th {
+    background: #eef3ff;
+
+    color: #1d4ed8;
+}
+
+
+/* ATTENDANCE STATUS */
+
+.present {
+    color: green;
+
+    font-weight: bold;
+}
+
+
+.absent {
+    color: red;
+
+    font-weight: bold;
+}
+
+
+/* DELETE BUTTON */
+
+.delete {
+    background: #dc2626;
+}
+
+
+.delete:hover {
+    background: #b91c1c;
+}
+
+
+/* HIDDEN */
+
+.hidden {
+    display: none;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .login-box {
+        width: 90%;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+}
+/* RESPONSIVE DESIGN */
+
+/* TABLET */
+@media (max-width: 900px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    header {
+        padding: 12px 15px;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 12px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 15px;
+        overflow: hidden;
+    }
+
+    .section h2 {
+        font-size: 18px;
+    }
+
+    .login-box {
+        width: 92%;
+        padding: 22px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    table {
+        min-width: 600px;
+    }
+
+    .table-box {
+        overflow-x: auto;
+    }
+
+    button {
+        padding: 10px 14px;
+    }
+}
